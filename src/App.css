@@ -91,9 +91,39 @@ body {
 
 .nav-links li:hover {
     color: #667eea;
+    transform: scale(1.1);
 }
 
-.nav-links li::after {
+.nav-item {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #667eea;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    /* transform-origin: left; */
+}
+
+.nav-item.active::after {
+    transform: scale(1);
+    background-color: #667eea;
+}
+
+/* Optional: Add hover effect */
+/* .nav-item:hover::after {
+    transform: scaleX(1);
+    background-color: #667eea;
+} */
+/* .nav-links li::after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -102,7 +132,7 @@ body {
     height: 2px;
     background: #667eea;
     transition: width 0.3s ease;
-}
+} */
 
 .nav-links li:hover::after {
     width: 100%;
@@ -427,16 +457,21 @@ section h2 {
     border-left: 4px solid #667eea;
 }
 
+.education-subheader {
+    display: flex;
+    flex-direction: column;
+}
+
 .education-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 1rem;
+    align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-.education-header h3 {
+.education-subheader h3 {
     font-size: 1.3rem;
     color: #2d3748;
 }
@@ -532,9 +567,11 @@ section h2 {
 
 /* Projects Section */
 .projects-grid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    row-gap: 2vh;
+    column-gap: 2%;
 }
 
 .project-card {
@@ -546,6 +583,7 @@ section h2 {
         transform 0.3s ease,
         box-shadow 0.3s ease;
     border: 1px solid #e2e8f0;
+    width: 49%;
 }
 
 .project-card:hover {
@@ -605,6 +643,7 @@ section h2 {
 
 .contact-links {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
@@ -735,6 +774,10 @@ section h2 {
 
     section {
         padding: 3rem 0;
+    }
+
+    .project-card {
+        width: 100%;
     }
 }
 
