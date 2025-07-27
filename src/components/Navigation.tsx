@@ -26,7 +26,14 @@ const Navigation = () => {
                     className="nav-logo"
                     onClick={() => scrollToSection('hero')}
                 >
-                    Neil Kapur
+                    <img
+                        className={`${isScrolled ? 'hidden' : ''}`}
+                        src={'nk_logo-light-transparent.svg'}
+                    />
+                    <img
+                        className={`${isScrolled ? '' : 'hidden'}`}
+                        src={'nk_logo-dark-transparent.svg'}
+                    />
                 </div>
                 <ul className="nav-links">
                     <li onClick={() => scrollToSection('about')}>About</li>
