@@ -1,6 +1,7 @@
 import './App.css';
 import InterestItem from './components/InterestItem';
 import Navigation from './components/Navigation';
+import Projects from './sections/Projects';
 
 function App() {
     const scrollToSection = (sectionId: string) => {
@@ -122,7 +123,10 @@ function App() {
                     <h2>Education</h2>
                     <div className="education-item">
                         <div className="education-header">
-                            <h3>Bachelor of Science in Computer Science </h3>
+                            <div className="education-subheader">
+                                <h3>Bachelor of Science in Computer Science</h3>
+                                <i>Machine Learning Specialization</i>
+                            </div>
                             <span className="education-date">May 2026</span>
                         </div>
                         <p className="education-institution">
@@ -185,7 +189,6 @@ function App() {
                             </li>
                         </ul>
                     </div>
-
                     <div className="experience-item">
                         <div className="experience-header">
                             <h3>Software Engineer Intern</h3>
@@ -242,6 +245,7 @@ function App() {
             </section>
 
             {/* Projects Section */}
+            <Projects />
 
             {/* Contact Section */}
             <section id="contact" className="contact">
