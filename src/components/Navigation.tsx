@@ -36,9 +36,9 @@ const Navigation = () => {
                     <li onClick={() => scrollToSection('experience')}>
                         Experience
                     </li>
-                    <li onClick={() => scrollToSection('projects')}>
+                    {/* <li onClick={() => scrollToSection('projects')}>
                         Projects
-                    </li>
+                    </li> */}
                     <li onClick={() => scrollToSection('contact')}>Contact</li>
                 </ul>
             </div>

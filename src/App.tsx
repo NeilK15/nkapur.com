@@ -240,7 +240,7 @@ function App() {
             </section>
 
             {/* Projects Section */}
-            <Projects />
+            {/* <Projects /> */}
 
             {/* Contact Section */}
             <section id="contact" className="contact">
