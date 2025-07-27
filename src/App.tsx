@@ -16,7 +16,7 @@ function App() {
             {/* Hero Section */}
             <section id="hero" className="hero">
                 <div className="hero-content">
-                    <h1>Neil Kapur</h1>
+                    <h1 className="hero-title">Neil Kapur</h1>
                     {/* <h2>Computer Science Professional</h2> */}
                     <p>
                         Passionate about technology, innovation, and solving the
