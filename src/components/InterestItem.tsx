@@ -1,6 +1,3 @@
-import React from 'react';
-import PlaceholderImage from './PlaceholderImage';
-
 interface InterestItemProps {
     title: string;
     image: string;

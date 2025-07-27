@@ -1,8 +1,6 @@
 import './App.css';
 import InterestItem from './components/InterestItem';
 import Navigation from './components/Navigation';
-import PlaceholderImage from './components/PlaceholderImage';
-import Projects from './sections/Projects';
 
 function App() {
     const scrollToSection = (sectionId: string) => {
@@ -240,7 +238,6 @@ function App() {
             </section>
 
             {/* Projects Section */}
-            <Projects />
 
             {/* Contact Section */}
             <section id="contact" className="contact">
