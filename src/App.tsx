@@ -97,8 +97,12 @@ function App() {
                                 <h3>Other Interests</h3>
                                 <div className="interests-grid">
                                     <InterestItem
-                                        title="The Outdoors"
+                                        title="Hiking"
                                         image="outdoors.JPG"
+                                    ></InterestItem>
+                                    <InterestItem
+                                        title="Golfing"
+                                        image="golf.jpg"
                                     ></InterestItem>
                                     <InterestItem
                                         title="Cooking"
